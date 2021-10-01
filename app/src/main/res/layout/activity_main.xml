@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:background="@color/white"
+            android:hint=" setCustomSelectionActionMode"
+            android:id="@+id/editText1" />
+
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_margin="20dp"-->
+<!--            android:background="@color/white"-->
+<!--            android:hint=" prevent fast input"-->
+<!--            android:id="@+id/editText2" />-->
+
+<!--        <EditText-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_margin="20dp"-->
+<!--            android:background="@color/white"-->
+<!--            android:hint=" disable onPaste Action"-->
+<!--            android:id="@+id/editText3" />-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:background="@color/white"
+            android:longClickable="false"
+            android:hint=" Set Long Click False"
+            android:id="@+id/editText4" />
+
+        <ai.apptest.preventpastetest.NoMenuEditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:background="@color/white"
+            android:hint=" NoMenuEditText"
+            android:id="@+id/editText5" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:text="OPEN WEBVIEW"
+            android:textSize="15dp"
+            android:textColor="@color/white"
+            android:background="@color/purple_200"
+            android:id="@+id/webViewButton" />
+
+    </LinearLayout>
+
+</LinearLayout>

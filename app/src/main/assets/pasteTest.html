@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<body>
+	<center>
+		<input type="text" id="pasteField" onpaste="return false;" ondrop="return false;" autocomplete="off" placeholder="Paste here!" style="height:40px; width:90%; font-size:30px">
+	</center>
+	<script>
+	    const pasteField = document.getElementById("pasteField");
+        pasteField.addEventListener('paste', e => e.preventDefault());
+	    $(document).ready(function(){$(document).bind("contextmenu",function(a){a.preventDefault()})});function keypressed(){return false}document.onkeydown=keypressed;
+	</script>
+</body>
